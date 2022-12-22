@@ -1,0 +1,22 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port: 8080
+
+spring:
+  main:
+    banner-mode:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bharathkalyans
+    username: postgres
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
